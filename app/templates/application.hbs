@@ -1,8 +1,12 @@
-<h1 id="title">Welcome to Ember</h1>
+<h1 id='title'>
+  Welcome to Ember
+</h1>
 
 {{#if this.session.isAuthenticated}}
   Signed In.
-  <button onclick={{this.signOut}}>Sign Out</button>
+  <button type='button' onclick={{this.signOut}}>
+    Sign Out
+  </button>
 {{/if}}
 
 {{#if this.routeRequiresAuthentication}}
